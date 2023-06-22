@@ -439,7 +439,6 @@ nav.scrolled{
 .contact{
     width: 100%;
     height: 80vh;
-    padding: 50px 0;
     background-color: #A01D26;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     display: flex;
@@ -545,7 +544,7 @@ nav.scrolled{
     }
     .contact form{
         flex-direction: column;
-        height: 100%;
+        height: 80%;
     }
     .left-form{
         text-align: center;
@@ -570,21 +569,24 @@ nav.scrolled{
         font-size: 40px;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 560px){
     .contact{
-        height: 80vh;
+        height: 100%;
+        background-color: #20232A;
+        box-shadow: none;
     }
     .contact form{
         border-radius: 0;
         padding: 10px;
         width: 100%;
-        height: 80vh;
+        height: 100%;
+        box-shadow: none;
     }
     .contact form:hover{
         scale: 1;
     }
     .right-form{
-        padding-bottom: 50px;
+        padding: 10px;
     }
     .input-sections button{
         font-size: 15px;
@@ -599,47 +601,4 @@ nav.scrolled{
     .left-form h1{
         font-size: 35px;
     }
-}
-.loader-wrapper {
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #242f3f;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-  }
-.loader {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    border: 4px solid #Fff;
-    animation: loader 2s infinite ease;
-}
-.loader-inner {
-    vertical-align: top;
-    display: inline-block;
-    width: 100%;
-    background-color: #fff;
-    animation: loader-inner 2s infinite ease-in;
-}
-  
-@keyframes loader {
-    0% { transform: rotate(0deg);}
-    25% { transform: rotate(180deg);}
-    50% { transform: rotate(180deg);}
-    75% { transform: rotate(360deg);}
-    100% { transform: rotate(360deg);}
-}
-  
-@keyframes loader-inner {
-    0% { height: 0%;}
-    25% { height: 0%;}
-    50% { height: 100%;}
-    75% { height: 100%;}
-    100% { height: 0%;}
 }
