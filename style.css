@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MuseoModerno:ital,wght@0,100;0,200;0,500;0,700;1,300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Koulen&family=Staatliches&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -7,6 +8,7 @@
     box-sizing: border-box;
     list-style: none;
     font-weight: 500;
+    -webkit-box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
@@ -25,6 +27,7 @@ html{
 nav a{
     color: white;
     border-bottom: 1px solid transparent;
+    transition: 0.25s;
     transition: 0.25s;
 }
 nav a:hover{
@@ -323,10 +326,10 @@ nav.scrolled{
     height: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -webkit-transition: 0.5s;
     gap: 5px;
-    transition: 0.5s;
     color: white;
 }
 .overlay p{
@@ -354,7 +357,7 @@ nav.scrolled{
 }
 .overlay *{
     opacity: 0;
-    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 .main_container:hover .overlay *{
     opacity: 1;
@@ -363,13 +366,13 @@ nav.scrolled{
     height: 100%;
 }
 .main_container:hover .image{
-    filter: blur(5px);
-    scale: 1.1;
+    -webkit-filter: blur(5px);
+    -webkit-transform: scale(1.1);
 }
 .line-work{
     width: 100%;
     display: flex;
-    justify-content: center;
+    -webkit-justify-content: center;
     align-items: center;
     gap: 50px;
 }
@@ -600,5 +603,123 @@ nav.scrolled{
     }
     .left-form h1{
         font-size: 35px;
+    }
+}
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #F4F4EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+.top-footer{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-footer a{
+    color: #060918;
+    font-weight: 700;
+    font-size: 30px;
+    -webkit-transition: 0.5s;
+}
+.top-footer a:hover{
+    color:#A01D26;
+}
+.middle-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.middle-footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.middle-footer ul li a{
+    color: #A01D26;
+    font-family:'Koulen';
+    letter-spacing: 2px;
+    font-size: 20px;
+    -webkit-transition: 0.5s;
+}
+.middle-footer ul li a::after{
+    content: '';
+    display: block;
+    transform: scaleX(0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transition:  1s ease;
+    transform-origin: bottom;
+}
+.hr{
+    width: 70%;
+    height: 1px;
+}
+hr{
+    width: 100%;
+    border: 1px solid linear-gradient(to right, red, yellow);
+    border-radius: 100%;
+}
+.bottom-footer{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+.bottom-footer p{ 
+    color: #A01D26;
+    font-family:'Staatliches';
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.bottom-footer .socials{
+    display: flex;
+    gap: 10px;
+}
+.socials i{
+    font-size: 25px;
+}
+.socials a{
+    color:#060918;
+    -webkit-transition: 0.5s;
+}
+.socials a:hover{
+    color: #A01D26;
+}
+.middle-footer ul li a:hover{
+    color: #060918;
+}
+.middle-footer ul li a:hover::after{
+    transform: scaleX(1);
+}
+@media (max-width: 530px){
+    .top-footer a{
+        font-size: 25px;
+    }
+    .middle-footer ul li a{
+        font-size: 15px;
+    }
+    .bottom-footer .socials a{
+        font-size: 20px;
+    }
+}
+@media (max-width: 450px){
+    .top-footer{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .middle-footer{
+        width: 100%;
+    }
+    .bottom-footer .socials a{
+        width: 100%;
     }
 }
