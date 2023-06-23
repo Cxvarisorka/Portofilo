@@ -723,3 +723,6 @@ hr{
         width: 100%;
     }
 }
+footer{
+    overflow: hidden;
+}
