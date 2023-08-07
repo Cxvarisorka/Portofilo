@@ -310,7 +310,7 @@ nav.scrolled{
 .image{
     width: 100%;
     height: 100%;
-    background-image: url('./Photos/Koh\ Samui\ Best\ Luxury\ Hotel_\ Kimpton\ Kitalay\ Samui\ Review.jpg');
+    background-image: url('./Black\ Brown\ Vintage\ Initial\ Baroque\ Style\ Logo.png');
     background-size: cover;
     background-position: center;
     transition: 0.5s;
@@ -377,7 +377,10 @@ nav.scrolled{
     gap: 50px;
 }
 .work2 .image{
-    background-image: url('/Photos/THULE\ -\ OMNISTOR\ 3200\ -\ ANTRACITE\ _\ 3_00m.jpg');
+    background-image: url('./Green\ and\ White\ Modern\ Car\ Rent\ Instagram\ Post.png');
+}
+.work3 .image{
+    background-image: url('./White\ Simple\ Entrepreneurship\ Logo\ \(2\).png');
 }
 .work{
     display: flex;
@@ -404,7 +407,7 @@ nav.scrolled{
     font-size: 80px;
     font-family:'Bebas Neue';
 }
-@media (max-width:1000px){
+@media (max-width:1500px){
     .work{
         height: 100%;
         padding: 50px 0;
