@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <script src="https://kit.fontawesome.com/ddac99b4fd.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./lulini.css">
+    <meta property="og:title" content="Luka Tskhvaradze's Portfolio" />
+    <meta property="og:description" content="Web Developer & Designer" />
+    <meta property="og:image" content="../Dark Desk Scene Flat Lay.jpg"/>
+    <title>Luka Tskhavaradze</title>
+</head>
+<body>
+    <div class="nv-1">
+        <nav>
+            <button id="menu">X</button>
+            <ul class="nav">
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#work">Work</a></li>
+            </ul>
+            <a href="/index.html" id="logo"><p>Luka Tskhvaradze</p></a>
+            <a href="/index.html#contact"><button>Contact Me</button></a>
+            <script>
+                but = document.querySelector("#menu");
+                but.onclick = function(){
+                    nav = document.querySelector(".nav");
+                    nav.classList.toggle("active");
+                    bd = document.querySelector("body");
+                    bd.classList.toggle("active");
+                    head = document.querySelector('nav');
+                    head.classList.toggle("active")
+                }  
+            </script>
+        </nav>
+    </div>
+    <div class="after-nav" >
+        <div class="main-after" data-aos="fade-down"  data-aos-duration="1000" >
+            <div class="top-after">
+                <a href="/index.html#work"><p><i class="fa-solid fa-arrow-left-long"></i> Go back</p></a>
+            </div>
+            <div class="bottom-after">
+                <p>JUNE 2023</p>
+                <p>Lulini Develoment</p>
+                <p>My project: A Architecture and Development website, crafted by me.</p>
+                <p>Website</p>
+                <hr>
+                <a href="https://lulinidevelopment.vercel.app/"><button><i class="fa-solid fa-eye"></i> View Project</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="info-project">
+        <div id="kk" data-aos="fade-right"  data-aos-duration="1000" >
+            <p>About Project</p>
+        </div>
+        <div class="main-info" data-aos="fade-right"  data-aos-duration="1000" >
+            <hr>
+            <div class="created-who">
+                <p>Company's Name: Lulini Develoment</p>
+                <p>Company's Owner: None</p>
+                <p>Company's Co-Owner: None</p>
+                <p>Brand Designed By: Luka Tskhvaradze</p>
+                <p>Website Created By: Luka Tskhvaradze</p>
+            </div>
+            <hr>
+            <div class="short-info" >
+                <p>Short Info About Company</p>
+                <p>Lulini Develoment.</p>
+            </div>
+            <hr>
+            <div class="socials-info">
+                <p>Socials</p>
+                <div class="main-soc">
+                    <a href="https://www.youtube.com/@LuliniTransport"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/Luka.Tskhvaradze"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lulinitransport/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="other-projects">
+        <div class="other-pr-top">
+            <p>RELATED PROJECTS</p>
+            <p>Discover New Worlds</p>
+        </div>
+        <div class="related-projects">
+            <div class="project work1">
+                <div class="related-image"></div>
+                <div class="related-info">
+                    <p>JULY 2023</p>
+                    <p>CodeGe</p>
+                    <p>Website & Design</p>
+                    <p>IT Solution Website.</p>
+                    <a href="./codege.html"><button>See More</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="top-footer">
+            <a href="#">Lulini Web Develoment</a>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="middle-footer">
+            <ul>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="/index.html#work">Work</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+                <li><a href="https://github.com/Cxvarisorka/Portofilo" target="_blank">Source Code</a></li>
+            </ul>
+        </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="bottom-footer">
+            <div class="socials">
+                <a href="http://discordapp.com/users/862050767397847060" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100088419544165" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/Cxvarisorka" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@LuliniTransport" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -372,6 +372,7 @@ nav.scrolled{
 .line-work{
     width: 100%;
     display: flex;
+    flex-direction: column;
     -webkit-justify-content: center;
     align-items: center;
     gap: 50px;
@@ -381,6 +382,9 @@ nav.scrolled{
 }
 .work3 .image{
     background-image: url('./White\ Simple\ Entrepreneurship\ Logo\ \(2\).png');
+}
+.work4 .image{
+    background-image: url('./Photos/Black\ Gold\ White\ Modern\ Property\ Agency\ Logo.png');
 }
 .work{
     display: flex;
@@ -407,12 +411,21 @@ nav.scrolled{
     font-size: 80px;
     font-family:'Bebas Neue';
 }
+.damateba{
+    display: flex;
+    gap: 50px;
+}
 @media (max-width:1500px){
     .work{
         height: 100%;
         padding: 50px 0;
     }
     .line-work{
+        flex-direction: column;
+    }
+}
+@media(max-width: 1050px){
+    .damateba{
         flex-direction: column;
     }
 }
